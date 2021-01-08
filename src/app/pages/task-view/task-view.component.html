@@ -54,10 +54,7 @@
                     <h1 class="title has-text-primary">Tasks</h1>
 
                 </div>
-                <div class="task">
-                    <p>Uncompleted Task</p>
-                    <p>Completed Task</p>
-                </div>
+
 
                 <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)"
                     [ngClass]="{'completed': task.completed}">
